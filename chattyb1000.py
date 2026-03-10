@@ -37,13 +37,20 @@ class ChattyB1000:
         return re.sub("|".join(hedges), "", text, flags=re.I)
 
     def _punch(self, text: str) -> str:
-        subs = [
-            (r"\bvery\b", "mad"),
-            (r"\breally\b", "deadass"),
-            (r"\bimportant\b", "key"),
-            (r"\btherefore\b", "so"),
-            (r"\bhowever\b", "but"),
-        ]
+       subs = [
+    (r"\bvery\b", "deadass"),
+    (r"\breally\b", "fr"),
+    (r"\bimportant\b", "key"),
+    (r"\btherefore\b", "so"),
+    (r"\bhowever\b", "but"),
+    (r"\byou should\b", "you gotta"),
+    (r"\bplease\b", ""),
+    (r"\bwe apologize\b", "our bad"),
+    (r"\binconvenience\b", "mess up"),
+    (r"\bauthorities\b", "the people who handle that"),
+    (r"\bdocument\b", "write everything down"),
+    (r"\bformal notice\b", "a real letter"),
+]
         for pat, rep in subs:
             text = re.sub(pat, rep, text, flags=re.I)
         text = re.sub(r"\b(we|you|I) (win|got|did|know)\b", r"**\1 \2**", text, flags=re.I)
