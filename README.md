@@ -4,7 +4,7 @@ AI Personality & Tone Engine
 
 ChattyB1000 is an experimental Python project exploring how conversational systems can dynamically adjust tone, personality, and response style.
 
-The goal of this project is to design a configurable framework where AI responses can be structured through personality parameters rather than static prompts.
+The project reflects an interest in building structured communication systems, automation tools, and configurable workflows for digital assistants and AI interfaces.
 
 ## Core Components
 
